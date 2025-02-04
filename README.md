@@ -7,6 +7,17 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
+## Running locally
+run in the command line
+```
+./startup.sh
+```
+
+## Running the tests
+`pytest`
+
+# Deploy To Azure Cloud
+
 ## Create and configure App in App Service
 ```
 export az_rg=<rg>
