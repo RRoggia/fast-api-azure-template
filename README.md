@@ -11,7 +11,10 @@ pip install -r requirements.txt
 run in the command line
 ```
 ./startup.sh
-```
+
+## Environment variables
+We are using pydantic to load the Environment variables. We use the pydantic's default priority list to determine the envs.
+The `.env-example` shows an example of the values expected.
 
 ## Running the tests
 `pytest`
