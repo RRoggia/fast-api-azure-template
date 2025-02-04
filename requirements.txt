@@ -1,5 +1,7 @@
 fastapi
 gunicorn
 uvicorn
+pydantic-settings
 httpx
 pytest
+
