@@ -2,8 +2,10 @@
 Template app using Python 3.12 and FastAPI designed to be deployed in Ms Azure.
 
 ## Setup local machine
-`python -m venv .venv`
-`pip install -r requirements.txt`
+```
+python -m venv .venv
+pip install -r requirements.txt
+```
 
 ## Create and configure App in App Service
 ```
