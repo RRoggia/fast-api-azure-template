@@ -1,3 +1,3 @@
 # !/bin/bash
 source .venv/bin/activate
-python -m gunicorn -k uvicorn.workers.UvicornWorker app.main:app
+python -m uvicorn --log-level trace --reload app.main:app

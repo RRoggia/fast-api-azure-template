@@ -1,6 +1,6 @@
 fastapi
-gunicorn
 uvicorn
+black
 pydantic-settings
 httpx
 pytest

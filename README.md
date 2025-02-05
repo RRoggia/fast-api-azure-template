@@ -17,6 +17,11 @@ run in the command line
 We are using pydantic to load the Environment variables. We use the pydantic's default priority list to determine the envs.
 The `.env-example` shows an example of the values expected.
 
+# Configuration
+
+## CORS
+The CORS middleware is enabled, the allowed urls can be configured in the .env file using the `cors` attribute.
+
 ## Running the tests
 `pytest`
 
