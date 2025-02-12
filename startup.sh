@@ -1,3 +1,2 @@
 # !/bin/bash
-source .venv/bin/activate
-python -m uvicorn --log-level trace --reload app.main:app
+python -m uvicorn --port 8000 app.main:app
