@@ -4,4 +4,4 @@ black
 pydantic-settings
 httpx
 pytest
-
+httpx

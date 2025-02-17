@@ -4,6 +4,7 @@ import logging
 from app.routers.v1 import example_2
 from app.routers.v1 import example_router
 from app.config import config
+import httpx
 
 V1 = "/v1"
 
@@ -30,6 +31,20 @@ def hello_world():
     print("hello")
     print(settings.pg_username)
     return {"hello": "world"}
+
+
+@app.get("/rescomp")
+def res_comp():
+    return {"answer": "from comp"}
+
+
+@app.get("/reqcomp")
+def req_comp():
+    print(">>>>>>>>>>>>>>>>>>>>")
+    print(settings.comp_api_url)
+    client = httpx.Client()
+    response = client.get(f"{settings.comp_api_url}/rescomp")
+    return response.json()
 
 
 @app.get("/health")
